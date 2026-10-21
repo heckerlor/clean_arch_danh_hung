@@ -1,0 +1,37 @@
+name: clean_arch_demo
+description: "Demo Clean Architecture - Chủ đề 04 - Lập Trình Đa Nền Tảng"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Quản lý trạng thái (State Management) theo kiến trúc BLoC/Cubit
+  flutter_bloc: ^8.1.6
+
+  # Service Locator - dùng để tiêm phụ thuộc (Dependency Injection)
+  get_it: ^7.7.0
+
+  # Gọi REST API qua HTTP
+  http: ^1.2.2
+
+  # Giúp so sánh 2 object theo giá trị thuộc tính (thay vì so sánh địa chỉ bộ nhớ)
+  equatable: ^2.0.5
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Thư viện tạo Mock Object để viết Unit Test
+  mocktail: ^1.0.4
+
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
